@@ -11,7 +11,9 @@ public:
   wxGridSizer *gs;
   wxTextCtrl *display;
   
-  void onCls (wxCommandEvent&);
+  void onBtCls (wxCommandEvent&);
+  void onBtBck (wxCommandEvent&);
+  void onBtClose(wxCommandEvent&);
   void onBt0 (wxCommandEvent&);
   void onBt1 (wxCommandEvent&);
   void onBt2 (wxCommandEvent&);
@@ -22,6 +24,7 @@ public:
   void onBt7 (wxCommandEvent&);
   void onBt8 (wxCommandEvent&);
   void onBt9 (wxCommandEvent&);
+  void onBtIgual(wxCommandEvent&);
   void onBtSum (wxCommandEvent&);
   void onBtRes(wxCommandEvent&);
   void onBtMul(wxCommandEvent&);
@@ -32,6 +35,9 @@ private:
   int valor2;
   string operacion;
   int nClicks;
+  int total;
+  int operando1;
+  int operando2;
   	
   DECLARE_EVENT_TABLE()
 };
