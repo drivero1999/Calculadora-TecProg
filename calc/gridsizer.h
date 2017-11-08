@@ -29,7 +29,10 @@ public:
   void onBtRes(wxCommandEvent&);
   void onBtClose(wxCommandEvent&);
   void onBtBck(wxCommandEvent&);
+
 private:
+  string texto1;
+  string texto2;
   string valor1;
   string valor2;
   string operando;
