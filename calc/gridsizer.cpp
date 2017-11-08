@@ -231,9 +231,11 @@ void GridSizer::onBtClose(wxCommandEvent& WXUNUSED (event)) {
 }
 
 void GridSizer::onBtBck(wxCommandEvent& WXUNUSED (event)) {
-	//valor1=0;
-	//valor2=0;
-	nClicks=0;
+	string s=(string)display->GetValue();
+	char w[20];
+	strcpy(w,s.c_str());
+	w[s.length()-1]='\0';
+	display->SetValue(string(w));
 	
 }
 
